@@ -1,0 +1,5 @@
+<div *ngIf="submitted && field.errors" class="invalid-feedback">
+  <div *ngIf="field.errors.required" translate>{{'general.required'}}</div>
+  <div *ngIf="field.errors.maxlength" translate>{{'general.maxLength'}} {{field.errors.maxlength.requiredLength}}</div>
+  <div *ngIf="field.errors.pattern" translate>{{'general.pattern.alphanumeric'}}</div>
+</div>
